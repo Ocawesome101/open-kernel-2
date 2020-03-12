@@ -1,0 +1,21 @@
+{
+  ["version"] = {
+    ["exec"] = {
+      "./build_id.lua"
+    }
+  },
+  ["install"] = {
+    ["exec"] = {
+      "cp /boot/kernel.lua /boot/kernel." .. (kernel._BUILDID or "old") .. ".lua",
+      "cp kernel.lua /boot/kernel.lua"
+    }
+  },
+  ["all"] = {
+    ["deps"] = {
+      "version"
+    },
+    ["exec"] = {
+      "luac kbase.lua kernel.lua"
+    }
+  }
+}

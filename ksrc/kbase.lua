@@ -1,13 +1,13 @@
 -- Open Kernel 2 --
---#include modules/version.lua
---#include modules/flags.lua
---#include modules/boot_proxies.lua
---#include modules/boot_io.lua
---#include modules/kernel_api.lua
---#include modules/filesystems.lua
---#include modules/utils.lua
---#include modules/events.lua
---#include modules/vcomponent.lua
---#include modules/devfs.lua
---#include modules/scheduler.lua
---#include modules/launchinit.lua
+--#include "modules/version.lua"
+--#include "modules/flags.lua"
+--#include "modules/boot_proxies.lua"
+--#include "modules/boot_io.lua"
+--#include "modules/kernel_api.lua"
+--#include "modules/filesystems.lua"
+--#include "modules/utils.lua"
+--#include "modules/events.lua"
+--#include "modules/vcomponent.lua"
+--#include "modules/devfs.lua"
+--#include "modules/scheduler.lua"
+--#include "modules/launchinit.lua"

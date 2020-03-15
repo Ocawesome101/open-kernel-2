@@ -3,7 +3,7 @@
 PROC = luacomp
 
 kernel: preproc lua version
-	$(PROC) kbase.lua kernel.lua
+	$(PROC) kbase.lua -O kernel.lua
 
 lua:
 	if ! [ -x "/usr/bin/lua" ]; then \

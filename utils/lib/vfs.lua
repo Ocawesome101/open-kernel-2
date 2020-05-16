@@ -133,7 +133,7 @@ function vfs.new(ro, files, vfsLabel)
   comp.address = addr
   comp.type = "filesystem"
 
-  comp.spaceUsed = function() dfsreturn computer.totalMemory() - computer.freeMemory() end
+  comp.spaceUsed = function() return computer.totalMemory() - computer.freeMemory() end
   comp.isReadOnly = function() return ro end
   comp.getLabel = function() return label end
 

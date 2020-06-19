@@ -5,7 +5,7 @@ all: kernel builddir
 	echo "Copy the files in 'build' to your hard disk."
 
 kernel:
-	if [ ! -f "ksrc/kernel.lua" ]; then echo "You must compile the kernel first!"; exit 1; fi
+	$(MAKE) -C ksrc
 
 builddir:
 	echo "Cleaning build directory"
